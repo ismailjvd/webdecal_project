@@ -1,0 +1,326 @@
+body, img {
+  margin: 0px;
+}
+
+#navbar {
+  padding: 0px;
+  background-color: #134170;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-bar {
+  background-color: white;
+  border-radius: 10px;
+  color: #BFBFBF;
+  font: 20px arial, sans-serif;
+  letter-spacing: 0.05em;
+  margin-left: 60px;
+  padding: 8px 12px 8px 8px;
+  height: 24px;
+  width: 376px;
+}
+
+input {
+  border: 0px;
+  width: 100%;
+  font: 20px arial, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+input:focus {
+  outline: none;
+}
+
+#logo {
+  padding-bottom: 8px;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#navbar-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 60px;
+  width: 376px;
+}
+
+.navbar-element {
+  font: bold 22px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.05em;
+  color: white;
+  padding: 8px 12px;
+}
+
+.navbar-element:hover {
+  cursor: pointer;
+  background-color: #0A2E52;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+}
+
+.navbar2-element a, .navbar-divider {
+  font: bold 22px arial, sans-serif;
+  letter-spacing: 0.2em;
+  color:white;
+  padding: 2px 16px 2px 16px;
+  text-align: center;
+}
+
+.navbar2-element {
+  margin: 8px 0px;
+}
+
+.navbar2-element a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.navbar-divider {
+  cursor: default;
+  margin-top: 4px;
+}
+
+#content-container {
+  background-color: #1A344F;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#top_hits {
+  background-color: #F9F9F9;
+  width: 1080px;
+  padding: 80px;
+}
+
+#hits_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  font: 32px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.06em;
+  padding-bottom: 4px;
+}
+
+select {
+  font: bold 20px Yu Gothic UI, sans-serif;
+  border: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-color: inherit;
+  width: 184px;
+  background-position-x: 160px;
+  text-align: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 4px 32px;
+}
+
+select:focus {
+  outline: none;
+}
+
+hr {
+  margin: 0px;
+}
+
+.hit_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+}
+
+.hit_container:hover {
+  background-color: #DADADA;
+  cursor: pointer;
+}
+
+.hit-left-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.position {
+  font: bold 36px Yu Gothic UI, sans-serif;
+  width: 48px;
+}
+
+.album_image img {
+  width: 64px;
+  height: 64px;
+  border: 2px solid black;
+  margin: 0px 8px;
+}
+
+.song-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px 8px;
+}
+
+.song_title {
+  font: 32px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.06em;
+  margin-top: -8px;
+}
+
+.song-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font: 22px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.song-divider {
+  font: 20px Yu Gothic UI, sans-serif;
+  cursor: inherit;
+  padding: 0px 12px;
+}
+
+.views-likes-container {
+  font: 20px Yu Gothic UI, sans-serif;
+  text-align:right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.views {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.views img {
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.likes img {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+}
+
+.song_hr {
+  opacity: 0.6;
+}
+
+#show-more {
+  font: 24px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.06em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#show-more {
+  cursor: pointer;
+}
+
+#show-more img {
+  width: 32px;
+  height: 24px;
+  transform: rotate(180deg);
+  padding: 12px;
+}
+
+#navbar-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: #134170;
+}
+
+.navbar-bottom-element {
+  font: bold 22px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.04em;
+  color: white;
+  padding: 8px 12px;
+  margin: 12px 12px;
+}
+
+.navbar-bottom-element:hover {
+  cursor: pointer;
+  background-color: #0A2E52;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: black;
+  padding-bottom: 24px;
+}
+
+#navbar2-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.navbar2-bottom-element {
+  font: bold 22px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.04em;
+  color: #389BFF;
+  padding: 8px 12px;
+  margin: 12px 12px;
+}
+
+.navbar2-bottom-element:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#copyright {
+  text-align: center;
+  font: 18px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.02em;
+  color: white;
+}

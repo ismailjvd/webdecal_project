@@ -3,76 +3,323 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 <body>
 	<div id="navbar">
-		<p class="navbar-element">Submit Lyrics</p>
-		<p class="navbar-element">Soundtracks</p>
-		<p class="navbar-element">Contact</p>
+		<div id="search-bar">
+			<input name="search" placeholder="Search Songs, Artists, Lyrics..." />
+		</div>
+		<div id="logo">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<img src="../assets/img/logo.png" />
+			</a>
+		</div>
+		<div id="navbar-row">
+			<div class="navbar-element">Sign In</div>
+			<div class="navbar-element">Sign Up</div>
+		</div>
 	</div>
 	<div id="navbar2">
-		<p class="navbar2-element">Artists</p>
-		<p class="navbar2-element">Top Hits</p>
-		<p class="navbar2-element">Albums</p>
+		<div class="navbar2-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				ARTISTS
+			</a>
+		</div>
+		<div class="navbar-divider">|</div>
+		<div class="navbar2-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				TOP HITS
+			</a>
+		</div>
+		<div class="navbar-divider">|</div>
+		<div class="navbar2-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				ALBUMS
+			</a>
+		</div>
 	</div>
-
-	<div id="top_hits">
-		<div class="hit_container">
-			<div class="song_title"></div>
-			<div class="artist_name"></div>
-			<div class="album_image"></div>
-			<div class="album_name"></div>
-			<div class="views"></div>
-			<div class="likes"></div>
-		</div>
-		<div class="hit_container">
-			<div class="song_title"></div>
-			<div class="artist_name"></div>
-			<div class="album_image"></div>
-			<div class="album_name"></div>
-			<div class="views"></div>
-			<div class="likes"></div>
-		</div>
-		<div class="hit_container">
-			<div class="song_title"></div>
-			<div class="artist_name"></div>
-			<div class="album_image"></div>
-			<div class="album_name"></div>
-			<div class="views"></div>
-			<div class="likes"></div>
-		</div>
-		<div class="hit_container">
-			<div class="song_title"></div>
-			<div class="artist_name"></div>
-			<div class="album_image"></div>
-			<div class="album_name"></div>
-			<div class="views"></div>
-			<div class="likes"></div>
-		</div>
-		<div class="hit_container">
-			<div class="song_title"></div>
-			<div class="artist_name"></div>
-			<div class="album_image"></div>
-			<div class="album_name"></div>
-			<div class="views"></div>
-			<div class="likes"></div>
+	<div id="content-container">
+			<div id="top_hits">
+				<div id="hits_header">
+					<div id="content-title">Top Hits</div>
+					<div id="filter-container">
+						<select class="filter" id="time-filter" dir="rtl">
+							<option value="Today">Today</option>
+							<option value="This Week">This Week</option>
+							<option value="This Month">This Month</option>
+							<option value="This Year">This Year</option>
+							<option value="All Time">All Time</option>
+						</select>
+						<select class="filter" id="sort-filter" dir="rtl">
+							<option value="Most Visited">Most Visited</option>
+							<option value="Trending">Trending</option>
+							<option value="Most Liked">Most Liked</option>
+						</select>
+					</div>
+				</div>
+				<hr>
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">1.</div>
+						<div class="album_image">
+							<img src="../assets/img/thank_u.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">thank u, next</div>
+							<div class="song-info-container">
+								<div class="artist_name">Ariana Grande</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">thank u, next</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">7.7M<img src="../assets/img/view.ico"/></div>
+						<div class="likes">205.1K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">2.</div>
+						<div class="album_image">
+							<img src="../assets/img/7_rings.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">7 Rings</div>
+							<div class="song-info-container">
+								<div class="artist_name">Ariana Grande</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">thank u, next</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">5.6M<img src="../assets/img/view.ico"/></div>
+						<div class="likes">180.1K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">3.</div>
+						<div class="album_image">
+							<img src="../assets/img/shallow.png" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">Shallow</div>
+							<div class="song-info-container">
+								<div class="artist_name">Lady Gaga & Bradley Cooper</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">A Star is Born</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">4.9M<img src="../assets/img/view.ico"/></div>
+						<div class="likes">170.5K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">4.</div>
+						<div class="album_image">
+							<img src="../assets/img/middle_child.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">MIDDLE CHILD</div>
+							<div class="song-info-container">
+								<div class="artist_name">J. Cole</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">Single</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">1.4M<img src="../assets/img/view.ico"/></div>
+						<div class="likes">80.7K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">5.</div>
+						<div class="album_image">
+							<img src="../assets/img/murder.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">Murder on My Mind</div>
+							<div class="song-info-container">
+								<div class="artist_name">YNW Melly</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">I Am You</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">1.3M<img src="../assets/img/view.ico"/></div>
+						<div class="likes">91.0K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">6.</div>
+						<div class="album_image">
+							<img src="../assets/img/sucker.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">Sucker</div>
+							<div class="song-info-container">
+								<div class="artist_name">The Jonas Brothers</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">Single</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">538.9K<img src="../assets/img/view.ico"/></div>
+						<div class="likes">61.3KK<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">7.</div>
+						<div class="album_image">
+							<img src="../assets/img/thotiana.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">Thotiana (Cardi B. Remix)</div>
+							<div class="song-info-container">
+								<div class="artist_name">Blueface</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">Famous Cryp</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">480.8K<img src="../assets/img/view.ico"/></div>
+						<div class="likes">58.1K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">8.</div>
+						<div class="album_image">
+							<img src="../assets/img/wish_you_were_gay.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">wish_you_were_gay</div>
+							<div class="song-info-container">
+								<div class="artist_name">Billie Eilish</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">WHEN WE ALL FALL ASLEEP...</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">471.5K<img src="../assets/img/view.ico"/></div>
+						<div class="likes">52.5K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">9.</div>
+						<div class="album_image">
+							<img src="../assets/img/please_me.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">Please Me</div>
+							<div class="song-info-container">
+								<div class="artist_name">Cardi B and Bruno Mars</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">Single</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">443.9K<img src="../assets/img/view.ico"/></div>
+						<div class="likes">49.3K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div class="hit_container">
+					<div class="hit-left-container">
+						<div class="position">10.</div>
+						<div class="album_image">
+							<img src="../assets/img/robbery.jpg" />
+						</div>
+						<div class="song-container">
+							<div class="song_title">Robbery</div>
+							<div class="song-info-container">
+								<div class="artist_name">Juice WRLD</div>
+								<div class="song-divider">|</div>
+								<div class="album_name">Single</div>
+							</div>
+						</div>
+					</div>
+					<div class="views-likes-container">
+						<div class="views">437.8K<img src="../assets/img/view.ico"/></div>
+						<div class="likes">46.3K<img src="../assets/img/like.png"/></div>
+					</div>
+				</div>
+				<hr class="song_hr">
+				<div id="show-more">
+					<img src="../assets/img/expand-arrow.svg" />
+					SHOW MORE
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="navbar-bottom">
-		<p class="navbarbottom-element">Request Lyrics</p>
-		<p class="navbarbottom-element">Submit Lyrics</p>
-		<p class="navbarbottom-element">Soundtracks</p>
-		<p class="navbarbottom-element">Music Videos</p>
-		<p class="navbarbottom-element">Facebook</p>
-		<p class="navbarbottom-element">Contact Us</p>
-
+		<div class="navbar-bottom-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				Request Lyrics
+			</a>
+		</div>
+		<div class="navbar-bottom-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				Submit Lyrics
+			</a>
+		</div>
+		<div class="navbar-bottom-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				Soundtracks
+			</a>
+		</div>
+		<div class="navbar-bottom-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				Music Videos
+			</a>
+		</div>
+		<div class="navbar-bottom-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				Facebook
+			</a>
+		</div>
+		<div class="navbar-bottom-element">
+			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+				Contact Us
+			</a>
+		</div>
 	</div>
-	<div id="navbar2-bottom">
-		<p class="navbarbottom2-element">Advertise Here</p>
-		<p class="navbarbottom2-element">Privacy Policy</p>
-		<p class="navbarbottom2-element">DMCA Policy</p>
+	<div id="footer">
+		<div id="navbar2-bottom">
+			<div class="navbar2-bottom-element">Advertise Here</div>
+			<div class="navbar2-bottom-element">Privacy Policy</div>
+			<div class="navbar2-bottom-element">DMCA Policy</div>
+		</div>
+		<div id="copyright">
+			All lyrics are property and copyright of their owners. All lyrics provided
+			for educational purposes and personal use only. <br>
+			<strong> Copyright © 2000-2019 AZLyrics.com </strong>
+		</div>
 	</div>
 </body>
 </html>
