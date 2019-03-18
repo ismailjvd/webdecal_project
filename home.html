@@ -3,17 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
+
 <body>
 	<div id="navbar">
 		<div id="search-bar">
-			<input name="search" placeholder="Search Songs, Artists, Lyrics..." />
+			<input name="search" id="search" placeholder="Search Songs, Artists, Lyrics..." />
+			<a href="search.html"><img class="search-icon" src="assets/img/search_icon.png"></a>
 		</div>
 		<div id="logo">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
-			<img src="../assets/img/logo.png" />
+			<a href="home.html">
+			<img src="assets/img/logo.png" />
 			</a>
 		</div>
 		<div id="navbar-row">
@@ -23,27 +25,28 @@
 	</div>
 	<div id="navbar2">
 		<div class="navbar2-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				ARTISTS
 			</a>
 		</div>
 		<div class="navbar-divider">|</div>
 		<div class="navbar2-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				TOP HITS
 			</a>
 		</div>
 		<div class="navbar-divider">|</div>
 		<div class="navbar2-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				ALBUMS
 			</a>
 		</div>
 	</div>
-	<div id="content-container">
-			<div id="top_hits">
-				<div id="hits_header">
-					<div id="content-title">Top Hits</div>
+
+	<div id="content-background">
+			<div id="content-container">
+				<div id="content_header">
+					<div id="content-main-title">Top Hits</div>
 					<div id="filter-container">
 						<select class="filter" id="time-filter" dir="rtl">
 							<option value="Today">Today</option>
@@ -64,7 +67,7 @@
 					<div class="hit-left-container">
 						<div class="position">1.</div>
 						<div class="album_image">
-							<img src="../assets/img/thank_u.jpg" />
+							<img src="assets/img/thank_u.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">thank u, next</div>
@@ -76,8 +79,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">7.7M<img src="../assets/img/view.ico"/></div>
-						<div class="likes">205.1K<img src="../assets/img/like.png"/></div>
+						<div class="views">7.7M<img src="assets/img/view.ico"/></div>
+						<div class="likes">205.1K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -85,7 +88,7 @@
 					<div class="hit-left-container">
 						<div class="position">2.</div>
 						<div class="album_image">
-							<img src="../assets/img/7_rings.jpg" />
+							<img src="assets/img/7_rings.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">7 Rings</div>
@@ -97,8 +100,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">5.6M<img src="../assets/img/view.ico"/></div>
-						<div class="likes">180.1K<img src="../assets/img/like.png"/></div>
+						<div class="views">5.6M<img src="assets/img/view.ico"/></div>
+						<div class="likes">180.1K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -106,7 +109,7 @@
 					<div class="hit-left-container">
 						<div class="position">3.</div>
 						<div class="album_image">
-							<img src="../assets/img/shallow.png" />
+							<img src="assets/img/shallow.png" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">Shallow</div>
@@ -118,8 +121,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">4.9M<img src="../assets/img/view.ico"/></div>
-						<div class="likes">170.5K<img src="../assets/img/like.png"/></div>
+						<div class="views">4.9M<img src="assets/img/view.ico"/></div>
+						<div class="likes">170.5K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -127,7 +130,7 @@
 					<div class="hit-left-container">
 						<div class="position">4.</div>
 						<div class="album_image">
-							<img src="../assets/img/middle_child.jpg" />
+							<img src="assets/img/middle_child.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">MIDDLE CHILD</div>
@@ -139,8 +142,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">1.4M<img src="../assets/img/view.ico"/></div>
-						<div class="likes">80.7K<img src="../assets/img/like.png"/></div>
+						<div class="views">1.4M<img src="assets/img/view.ico"/></div>
+						<div class="likes">80.7K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -148,7 +151,7 @@
 					<div class="hit-left-container">
 						<div class="position">5.</div>
 						<div class="album_image">
-							<img src="../assets/img/murder.jpg" />
+							<img src="assets/img/murder.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">Murder on My Mind</div>
@@ -160,8 +163,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">1.3M<img src="../assets/img/view.ico"/></div>
-						<div class="likes">91.0K<img src="../assets/img/like.png"/></div>
+						<div class="views">1.3M<img src="assets/img/view.ico"/></div>
+						<div class="likes">91.0K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -169,7 +172,7 @@
 					<div class="hit-left-container">
 						<div class="position">6.</div>
 						<div class="album_image">
-							<img src="../assets/img/sucker.jpg" />
+							<img src="assets/img/sucker.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">Sucker</div>
@@ -181,8 +184,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">538.9K<img src="../assets/img/view.ico"/></div>
-						<div class="likes">61.3KK<img src="../assets/img/like.png"/></div>
+						<div class="views">538.9K<img src="assets/img/view.ico"/></div>
+						<div class="likes">61.3KK<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -190,7 +193,7 @@
 					<div class="hit-left-container">
 						<div class="position">7.</div>
 						<div class="album_image">
-							<img src="../assets/img/thotiana.jpg" />
+							<img src="assets/img/thotiana.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">Thotiana (Cardi B. Remix)</div>
@@ -202,8 +205,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">480.8K<img src="../assets/img/view.ico"/></div>
-						<div class="likes">58.1K<img src="../assets/img/like.png"/></div>
+						<div class="views">480.8K<img src="assets/img/view.ico"/></div>
+						<div class="likes">58.1K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -211,10 +214,10 @@
 					<div class="hit-left-container">
 						<div class="position">8.</div>
 						<div class="album_image">
-							<img src="../assets/img/wish_you_were_gay.jpg" />
+							<img src="assets/img/wish_you_were_gay.jpg" />
 						</div>
 						<div class="song-container">
-							<div class="song_title">wish_you_were_gay</div>
+							<div class="song_title">wish you were gay</div>
 							<div class="song-info-container">
 								<div class="artist_name">Billie Eilish</div>
 								<div class="song-divider">|</div>
@@ -223,8 +226,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">471.5K<img src="../assets/img/view.ico"/></div>
-						<div class="likes">52.5K<img src="../assets/img/like.png"/></div>
+						<div class="views">471.5K<img src="assets/img/view.ico"/></div>
+						<div class="likes">52.5K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -232,7 +235,7 @@
 					<div class="hit-left-container">
 						<div class="position">9.</div>
 						<div class="album_image">
-							<img src="../assets/img/please_me.jpg" />
+							<img src="assets/img/please_me.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">Please Me</div>
@@ -244,8 +247,8 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">443.9K<img src="../assets/img/view.ico"/></div>
-						<div class="likes">49.3K<img src="../assets/img/like.png"/></div>
+						<div class="views">443.9K<img src="assets/img/view.ico"/></div>
+						<div class="likes">49.3K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
@@ -253,7 +256,7 @@
 					<div class="hit-left-container">
 						<div class="position">10.</div>
 						<div class="album_image">
-							<img src="../assets/img/robbery.jpg" />
+							<img src="assets/img/robbery.jpg" />
 						</div>
 						<div class="song-container">
 							<div class="song_title">Robbery</div>
@@ -265,13 +268,13 @@
 						</div>
 					</div>
 					<div class="views-likes-container">
-						<div class="views">437.8K<img src="../assets/img/view.ico"/></div>
-						<div class="likes">46.3K<img src="../assets/img/like.png"/></div>
+						<div class="views">437.8K<img src="assets/img/view.ico"/></div>
+						<div class="likes">46.3K<img src="assets/img/like.png"/></div>
 					</div>
 				</div>
 				<hr class="song_hr">
-				<div id="show-more">
-					<img src="../assets/img/expand-arrow.svg" />
+				<div class="show-more">
+					<img src="assets/img/expand-arrow.svg" />
 					SHOW MORE
 				</div>
 			</div>
@@ -279,32 +282,32 @@
 	</div>
 	<div id="navbar-bottom">
 		<div class="navbar-bottom-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				Request Lyrics
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				Submit Lyrics
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				Soundtracks
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				Music Videos
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				Facebook
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="file:///C:/Users/Ismae/webdecal/group_proj/front_end/home.html">
+			<a href="home.html">
 				Contact Us
 			</a>
 		</div>
