@@ -131,9 +131,10 @@ a:visited {
   background-color: #F9F9F9;
   width: 1080px;
   padding: 80px;
+  overflow: hidden;
 }
 
-#content_header {
+.content_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -310,6 +311,17 @@ hr {
   opacity: 0.6;
 }
 
+.artist-highlights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.artist-songs {
+  width: 45%;
+}
+
 .artist-row {
   display: flex;
   flex-direction: row;
@@ -346,21 +358,124 @@ hr {
   letter-spacing: 0.06em;
 }
 
+.hero-image-container {
+  position:relative;
+  top: -85px;
+  left: -85px;
+  height: 500px;
+  width: 1250px;
+  overflow:hidden;
+}
+
+.background-hero-image {
+  width:1250px;
+  height:510px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  filter: blur(5px);
+}
+
+.artist-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: -440px;
+  left: -80px;
+}
+
+.artist-header-image {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+.artist-header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 24px;
+}
+
+.artist-header-name {
+  font: bold 36px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.06em;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.artist-header-handle {
+  font: bold 20px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.06em;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.artist-songs .song_title {
+  font: 22px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.artist-songs .views-likes-container {
+  font: 16px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.artist-albums {
+  display:block;
+  width: 45%;
+}
+
+.artist-albums .album-name {
+  font: 18px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.04em;
+  width: 180px;
+  word-wrap: nowrap;
+}
+
+.artist-albums hr {
+  width: 100%;
+}
+
+.artist-albums .album-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 4px;
+}
+
+.artist-albums .album-item {
+  font: 24px Yu Gothic UI, sans-serif;
+  letter-spacing: 0.04em;
+  padding: 12px 12px;
+}
+
+.artist-albums .show-more {
+  padding-top: 26px;
+}
+
 .album-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-content: center;
-  padding-top: 8px;
+  align-items: center;
 }
 
 .album-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
   text-align: center;
-  padding: 24px 24px;
+  padding: 12px 24px;
 }
 
 .album-item:hover {
