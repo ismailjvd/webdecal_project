@@ -12,11 +12,11 @@
 			<input name="search" id="search" placeholder="Search Songs, Artists, Lyrics..." />
 			<a href="search.html"><img class="search-icon" src="assets/img/search_icon.png"></a>
 		</div>
+		<a href="index.html">
 		<div id="logo">
-			<a href="home.html">
-			<img src="assets/img/logo.png" />
-			</a>
+				<img src="assets/img/logo-5.png" />
 		</div>
+		</a>
 		<div id="navbar-row">
 			<div class="navbar-element">Sign In</div>
 			<div class="navbar-element">Sign Up</div>
@@ -24,35 +24,42 @@
 	</div>
 	<div id="navbar2">
 		<div class="navbar2-element">
-			<a href="home.html">
-				ARTISTS
+			<a href="artist.html">
+				ARTIST
 			</a>
 		</div>
 		<div class="navbar-divider">|</div>
 		<div class="navbar2-element">
-			<a href="home.html">
-				TOP HITS
+			<a href="search.html">
+				SEARCH
 			</a>
 		</div>
 		<div class="navbar-divider">|</div>
 		<div class="navbar2-element">
-			<a href="home.html">
-				ALBUMS
+			<a href="lyrics.html">
+				LYRICS
 			</a>
 		</div>
 	</div>
 
 	<div id="content-background">
-			<div id="content-container">
+			<div class="content-container" id="artist-content-container">
 				<div class="hero-image-container">
 					<img class="background-hero-image" src="assets/img/ariana-hero-2.jpg" />
 					<div class="artist-header">
-						<div class="artist-header-info">
-							<div class="artist-header-name">Ariana Grande</div>
-							<div class="artist-header-handle">@ArianaGrande</div>
-						</div>
-						<img class="artist-header-image" src="assets/img/ariana_grande.jpg" />
+						<a href="artist.html">
+							<div class="artist-header-info">
+									<div class="artist-header-name">Ariana Grande</div>
+									<div class="artist-header-handle">@ArianaGrande</div>
+							</div>
+						</a>
+						<a href="artist.html">
+							<img class="artist-header-image" src="assets/img/ariana_grande.jpg" />
+						</a>
 					</div>
+				</div>
+				<div class="follow-action-container">
+					<div class="follow-action"> Follow <img src="assets/img/follow.svg"/></div>
 				</div>
 				<div class="artist-highlights">
 					<div class="artist-songs">
@@ -75,20 +82,22 @@
 							</div>
 						</div>
 						<hr class="song_hr">
-						<div class="hit_container">
-							<div class="hit-left-container">
-								<div class="album_image">
-									<img src="assets/img/7_rings.jpg" />
+						<a href="lyrics.html">
+							<div class="hit_container">
+								<div class="hit-left-container">
+									<div class="album_image">
+										<img src="assets/img/7_rings.jpg" />
+									</div>
+									<div class="song-container">
+										<div class="song_title">7 rings</div>
+									</div>
 								</div>
-								<div class="song-container">
-									<div class="song_title">7 rings</div>
+								<div class="views-likes-container">
+									<div class="views">5.6M<img src="assets/img/view.ico"/></div>
+									<div class="likes">180.1K<img src="assets/img/like.png"/></div>
 								</div>
 							</div>
-							<div class="views-likes-container">
-								<div class="views">5.6M<img src="assets/img/view.ico"/></div>
-								<div class="likes">180.1K<img src="assets/img/like.png"/></div>
-							</div>
-						</div>
+						</a>
 						<hr class="song_hr">
 						<div class="hit_container">
 							<div class="hit-left-container">
@@ -184,41 +193,31 @@
 
 	<div id="navbar-bottom">
 		<div class="navbar-bottom-element">
-			<a href="home.html">
-				Request Lyrics
-			</a>
-		</div>
-		<div class="navbar-bottom-element">
-			<a href="home.html">
+			<a href="https://www.azlyrics.com/add.php">
 				Submit Lyrics
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="home.html">
+			<a href="https://www.stlyrics.com/">
 				Soundtracks
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="home.html">
-				Music Videos
-			</a>
-		</div>
-		<div class="navbar-bottom-element">
-			<a href="home.html">
+			<a href="https://www.facebook.com/pages/AZLyricscom/154139197951223">
 				Facebook
 			</a>
 		</div>
 		<div class="navbar-bottom-element">
-			<a href="home.html">
+			<a href="https://www.azlyrics.com/contact.html">
 				Contact Us
 			</a>
 		</div>
 	</div>
 	<div id="footer">
 		<div id="navbar2-bottom">
-			<div class="navbar2-bottom-element">Advertise Here</div>
-			<div class="navbar2-bottom-element">Privacy Policy</div>
-			<div class="navbar2-bottom-element">DMCA Policy</div>
+			<div class="navbar2-bottom-element"><a href="https://www.azlyrics.com/adv.html">Advertise Here</a></div>
+			<div class="navbar2-bottom-element"><a href="https://www.azlyrics.com/privacy.htmlPrivacy">Privacy Policy</a></div>
+			<div class="navbar2-bottom-element"><a href="https://www.azlyrics.com/copyright.html">DMCA Policy</a></div>
 		</div>
 		<div id="copyright">
 			All lyrics are property and copyright of their owners. All lyrics provided

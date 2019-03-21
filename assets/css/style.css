@@ -2,6 +2,11 @@ body, img {
   margin: 0px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #navbar {
   padding: 0px;
   background-color: #134170;
@@ -51,7 +56,12 @@ body, img {
 }
 
 #logo {
-  padding-bottom: 8px;
+  margin: 8px 0px -6px 0px;
+  padding-bottom: 0px;
+}
+
+#logo img {
+  height: 85px;
 }
 
 #logo:hover {
@@ -77,15 +87,6 @@ body, img {
 .navbar-element:hover {
   cursor: pointer;
   background-color: #0A2E52;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  text-decoration: none;
 }
 
 #navbar2 {
@@ -127,11 +128,19 @@ a:visited {
   align-items: center;
 }
 
-#content-container {
+.content-container {
   background-color: #F9F9F9;
   width: 1080px;
   padding: 80px;
   overflow: hidden;
+}
+
+#lyrics-content-container {
+  padding-bottom: 20px;
+}
+
+#artist-content-container {
+  padding-bottom: 0px;
 }
 
 .content_header {
@@ -145,7 +154,7 @@ a:visited {
 }
 
 #main-content-container {
-
+  padding: 0px 20px;
 }
 
 #main-content-container hr {
@@ -159,7 +168,7 @@ a:visited {
   align-items: baseline;
   font: 30px Yu Gothic UI, sans-serif;
   letter-spacing: 0.06em;
-  padding: 40px 0px 4px 0px;
+  padding: 24px 0px 4px 0px;
 }
 
 .content-title {
@@ -199,7 +208,6 @@ hr {
 }
 
 .main-hr {
-  border: 1px solid #4c4c4c;
   margin-bottom: 24px;
 }
 
@@ -281,6 +289,25 @@ hr {
   align-items: flex-end;
 }
 
+.lyrics-header-info .views-likes-container {
+  font: 26px Yu Gothic UI, sans-serif;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.lyrics-header-info .likes img {
+  width: 32px;
+  height: 32px;
+  margin: 0px 12px 0px 0px;
+}
+
+.lyrics-header-info .views img {
+  width: 32px;
+  height: 32px;
+  margin: 0px 12px 0px 0px;
+}
+
 .views {
   display: flex;
   flex-direction: row;
@@ -289,8 +316,8 @@ hr {
 }
 
 .views img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   margin-left: 8px;
 }
 
@@ -302,8 +329,8 @@ hr {
 }
 
 .likes img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   margin-left: 12px;
 }
 
@@ -316,6 +343,8 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-start;
+  position: relative;
+  top: -60px;
 }
 
 .artist-songs {
@@ -360,15 +389,15 @@ hr {
 
 .hero-image-container {
   position:relative;
-  top: -85px;
-  left: -85px;
+  top: -87px;
+  left: -90px;
   height: 500px;
   width: 1250px;
   overflow:hidden;
 }
 
 .background-hero-image {
-  width:1250px;
+  width:1260px;
   height:510px;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -388,6 +417,10 @@ hr {
   left: -80px;
 }
 
+.artist-header-image:hover {
+  cursor: pointer;
+}
+
 .artist-header-image {
   width: 360px;
   height: 360px;
@@ -403,6 +436,10 @@ hr {
   padding: 24px;
 }
 
+.artist-header-info:hover {
+  cursor: pointer;
+}
+
 .artist-header-name {
   font: bold 36px Yu Gothic UI, sans-serif;
   letter-spacing: 0.06em;
@@ -415,6 +452,217 @@ hr {
   letter-spacing: 0.06em;
   color: white;
   text-shadow: 2px 2px black;
+}
+
+.lyrics-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: -24px;
+  position: relative;
+  top: -120px;
+}
+
+.lyrics-header-img {
+  width: 220px;
+  height: 220px;
+  border: 3px solid black;
+}
+
+.lyrics-header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 24px 0px 24px;
+  font:28px Yu Gothic UI, sans-serif;
+  width: 30%
+}
+
+.lyrics-header-song-title {
+  font: bold 38px Yu Gothic UI, sans-serif;
+}
+
+.lyrics-header-album-title {
+  margin-top: -4px;
+}
+
+.action-items-lyrics {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  height: 160px;
+}
+
+.like-action {
+  font: 20px Yu Gothic UI, sans-serif;
+  background-color: #389BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  margin-top: 8px;
+}
+
+.like-action img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+  margin: 0px 0px -4px 12px;
+}
+
+.like-action:hover {
+  cursor: pointer;
+  background-color: #317cc7;
+}
+
+.like-action:active {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 100ms;
+}
+
+.email-action {
+  font: 20px Yu Gothic UI, sans-serif;
+  background-color: #389BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  margin-top: 8px;
+}
+
+.email-action img {
+  width: 24px;
+  height: 15px;
+  filter: invert(1);
+  margin: 0px 0px 0px 12px;
+}
+
+.email-action:hover {
+  cursor: pointer;
+  background-color: #317cc7;
+}
+
+.email-action:active {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 100ms;
+}
+
+.print-action {
+  font: 20px Yu Gothic UI, sans-serif;
+  background-color: #389BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  margin-top: 8px;
+}
+
+.print-action img {
+  width: 24px;
+  height: 20px;
+  filter: invert(1);
+  margin: 0px 0px -4px 12px;
+}
+
+.print-action:hover {
+  cursor: pointer;
+  background-color: #317cc7;
+}
+
+.print-action:active {
+  transform: scale(1.05);
+  transition: 100ms;
+}
+
+.correct-action-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -60px;
+}
+
+.correct-action {
+  font: bold 20px Yu Gothic UI, sans-serif;
+  background-color: #389BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  margin-top: 8px;
+  width: 216px;
+}
+
+.correct-action img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+  margin: 0px 0px -4px 12px;
+}
+
+.correct-action:hover {
+  cursor: pointer;
+  background-color: #317cc7;
+}
+
+.correct-action:active {
+  transform: scale(1.05);
+  transition: 100ms;
+}
+
+.follow-action-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: -180px;
+}
+
+.follow-action {
+  font: bold 20px Yu Gothic UI, sans-serif;
+  background-color: #389BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  margin-top: 8px;
+}
+
+.follow-action img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+  margin: 0px 0px -3px 12px;
+}
+
+.follow-action:hover {
+  cursor: pointer;
+  background-color: #317cc7;
+}
+
+.follow-action:active {
+  transform: scale(1.05);
+  transition: 100ms;
+}
+
+
+#lyrics-sub-header {
+  position: relative;
+  top: -120px;
+}
+
+#lyrics-sub-header-hr {
+  position: relative;
+  top: -120px;
+  width: 60%;
 }
 
 .artist-songs .song_title {
@@ -456,10 +704,11 @@ hr {
   font: 24px Yu Gothic UI, sans-serif;
   letter-spacing: 0.04em;
   padding: 12px 12px;
+  margin-top: 2px;
 }
 
 .artist-albums .show-more {
-  padding-top: 26px;
+  padding-top: 23px;
 }
 
 .album-row {
@@ -476,6 +725,7 @@ hr {
   align-items: center;
   text-align: center;
   padding: 12px 24px;
+  margin-top: 6px;
 }
 
 .album-item:hover {
@@ -526,6 +776,27 @@ hr {
   padding: 12px;
 }
 
+.lyrics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: -120px;
+}
+
+.stanza {
+  font: 22px Yu Gothic UI, sans-serif;
+  padding: 16px 8px;
+}
+
+#first-stanza {
+  padding-top: 32px;
+}
+
+.line {
+  padding: 2px 0px;
+}
+
 #artists-container .show-more {
   font: 24px Yu Gothic UI, sans-serif;
   letter-spacing: 0.06em;
@@ -537,7 +808,7 @@ hr {
   padding-bottom: 16px;
 }
 
-.lyrics-container {
+.lyrics-preview-container {
   width:50%;
   font: 16px Yu Gothic UI, sans-serif;
   letter-spacing: 0.04em;
